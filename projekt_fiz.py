@@ -1,4 +1,4 @@
-#zeby odpalic w terminalu : python pendulum_animation.py
+#zeby odpalic w terminalu : python projekt_fiz.py
 
 import numpy as np
 import matplotlib.pyplot as plt
