@@ -1,4 +1,9 @@
-#zeby odpalic w terminalu : python projekt_fiz.py
+"""
+aby uruchomić program w terminalu należy wpisać komendę: python projekt_fiz.py
+Autorzy:
+- Barbara Woźniak
+- Jędrzej Olechowski
+"""
 
 import numpy as np
 import matplotlib.pyplot as plt
