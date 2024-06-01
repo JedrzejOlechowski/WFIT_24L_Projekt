@@ -56,7 +56,7 @@ z = -L * np.cos(θ)
 # Liczba mas dodatkowych na linie wahadła
 n = 100
 
-# Utworzenie figury 3D
+# Utworzenie figury 3D dla animacji
 fig = plt.figure(figsize=(10, 8))
 ax = fig.add_subplot(111, projection='3d')
 ax.set_xlim([-L, L])
@@ -91,4 +91,28 @@ def animate(i):
 # Animacja trajektorii
 ani = FuncAnimation(fig, animate, frames=len(t_values), interval=1, blit=True)
 
+# Utworzenie wykresów kątów θ i φ w czasie
+fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 8))
+
+# Wykres kąta θ w czasie
+ax1.plot(t_values, np.degrees(θ), label='Kąt θ')
+ax1.set_xlabel('Czas (s)')
+ax1.set_ylabel('Kąt θ (stopnie)')
+ax1.set_title('Kąt θ w czasie')
+ax1.legend()
+ax1.grid()
+
+# Wykres kąta φ w czasie
+ax2.plot(t_values, np.degrees(φ), label='Kąt φ', color='orange')
+ax2.set_xlabel('Czas (s)')
+ax2.set_ylabel('Kąt φ (stopnie)')
+ax2.set_title('Kąt φ w czasie')
+ax2.legend()
+ax2.grid()
+
+# Wyświetlenie wykresów
+plt.tight_layout()
+plt.show()
+
+# Wyświetlenie animacji
 plt.show()
