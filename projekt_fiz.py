@@ -13,9 +13,9 @@ from matplotlib.animation import FuncAnimation
 # Parametry fizyczne
 L = 0.3  # Długość wahadła (m)
 g = 9.81  # Przyspieszenie grawitacyjne (m/s^2)
-T = 10  # Okres obrotu Ziemi (s)
+T = 24  # Okres obrotu Ziemi (s)
 Ω = 2 * np.pi / T  # Pulsacja obrotu Ziemi
-l = np.radians(45)  # Szerokość geograficzna wahadła
+l = np.radians(90)  # Szerokość geograficzna wahadła
 ω0 = np.sqrt(g / L)  # Pulsacja własna wahadła
 
 # Funkcja rozwiązująca równania różniczkowe za pomocą odeint
